@@ -1,0 +1,148 @@
+/* desktop navbar */
+
+.navbar {
+    left: 0;
+    width: 100vw;
+    display: block;
+    z-index: 100;
+    position: fixed;
+    transition: 143.9ms;
+    margin-top: 0em;
+    padding-top: 9px;
+    padding-bottom: 5px;
+    list-style-type: none;
+    background-color: #000000;
+}
+
+.nav-brand {
+    float: left;
+    margin-top: 6px;
+    padding-top: 8px;
+    margin-left: 10%;
+    margin-right: 3.5%;
+    vertical-align: middle;
+}
+
+.nav-img {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.desktop-nav {
+    left: 0;
+    display: block;
+    margin-top: 0;
+    transition: 143.9ms;
+    padding-top: 3px;
+    margin-left: 5.5%;
+    margin-bottom: 0;
+    padding-bottom: 3px;
+}
+
+.desktop-nav li {
+    float: left;
+    transition: 0.5ms;
+    margin-top: 6px;
+    padding-top: 8px;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-bottom: 6px;
+    list-style-type: none;
+}
+
+.desktop-nav li a {
+    color: #ffffff;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    padding-left: 14px;
+    padding-right: 14px;
+    border-radius: 13px;
+    padding-bottom: 8px;
+    text-decoration: none;
+}
+
+.desktop-nav a:hover:not(.active) {
+    color: #c2c9ce;
+}
+
+.active a {
+    color: #dbccad;
+}
+
+
+/* responstive */
+
+@media screen and (max-width: 1024px) {
+    .desktop-nav {
+        display: none !important;
+    }
+}
+
+
+/* mobile navbar navbar */
+
+.mobnav {
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    z-index: 1;
+    position: fixed;
+    margin-top: 0px;
+    transition: 0.5s;
+    overflow-x: hidden;
+    padding-top: 60px;
+    background-color: #000000;
+    margin-top: 50px;
+    /* i added this because pos fixed on the desktop nav blocks the x on the mob nav */
+}
+
+.mobilenavbtn {
+    float: right;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 30px;
+    margin-right: 3%;
+}
+
+.mobnav a {
+    color: #ffffff;
+    display: block;
+    padding: 7px 8px 7px 32px;
+    font-size: 25px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.mobnav a:hover {
+    color: #cdd1d4;
+}
+
+.mobnav .closebtn {
+    top: 0;
+    right: 25px;
+    position: absolute;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+/* responsive */
+
+@media screen and (max-height: 450px) {
+    .mobnav {
+        padding-top: 15px;
+    }
+    .mobnav a {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .mobilenavbtn {
+        display: none !important;
+    }
+}
